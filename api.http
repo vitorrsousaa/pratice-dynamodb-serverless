@@ -1,0 +1,24 @@
+@host = https://864d-179-108-191-159.ngrok-free.app
+
+###
+
+GET {{host}}/products
+
+###
+GET {{host}}/products/productId
+
+###
+POST {{host}}/products
+Content-Type: application/json
+
+{
+  "name": "Moletom",
+  "price": 100,
+  "tags": ["moletom", "roupa"]
+}
+
+###
+PUT  {{host}}/products/productId
+
+###
+DELETE  {{host}}/products/productId
